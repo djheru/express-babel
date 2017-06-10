@@ -6,6 +6,9 @@ const routes = Router();
  * GET home page
  */
 routes.get('/', (req, res) => {
+  for (let i=0; i<10; i++) {
+    console.log('OHAI: ', i);
+  }
   res.render('index', { title: 'Express Babel' });
 });
 
